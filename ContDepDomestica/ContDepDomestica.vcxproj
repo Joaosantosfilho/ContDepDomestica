@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{1E54A565-43FD-4F5D-9BE6-2316736E93C7}</ProjectGuid>
+    <EnableManagedPackageReferenceSupport>true</EnableManagedPackageReferenceSupport>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>ContDepDomestica</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SqlServerCe">
+      <HintPath>C:\Program Files\Microsoft SQL Server Compact Edition\v4.0\Desktop\System.Data.SqlServerCe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AltSenha.cpp" />
+    <ClCompile Include="CadCateg.cpp" />
+    <ClCompile Include="CadNovoUsu.cpp" />
+    <ClCompile Include="DataBase.cpp" />
+    <ClCompile Include="ExDespesaCategoria.cpp" />
+    <ClCompile Include="ExDespesaData.cpp" />
+    <ClCompile Include="ExibirTudo.cpp" />
+    <ClCompile Include="ExReceitaCategoria.cpp" />
+    <ClCompile Include="ExReceitaData.cpp" />
+    <ClCompile Include="ExReceitaMenosDespesa.cpp" />
+    <ClCompile Include="InserDespesas.cpp" />
+    <ClCompile Include="InserReceitas.cpp" />
+    <ClCompile Include="Login.cpp" />
+    <ClCompile Include="PagPrincipal.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AltSenha.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="CadCateg.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="CadNovoUsu.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="DataBase.h" />
+    <ClInclude Include="ExDespesaCategoria.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ExDespesaData.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ExibirTudo.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ExReceitaCategoria.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ExReceitaData.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="ExReceitaMenosDespesa.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="InserDespesas.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="InserReceitas.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Login.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="PagPrincipal.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AltSenha.resx">
+      <DependentUpon>AltSenha.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadCateg.resx">
+      <DependentUpon>CadCateg.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadNovoUsu.resx">
+      <DependentUpon>CadNovoUsu.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExDespesaCategoria.resx">
+      <DependentUpon>ExDespesaCategoria.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExDespesaData.resx">
+      <DependentUpon>ExDespesaData.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExibirTudo.resx">
+      <DependentUpon>ExibirTudo.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExReceitaCategoria.resx">
+      <DependentUpon>ExReceitaCategoria.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExReceitaData.resx">
+      <DependentUpon>ExReceitaData.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExReceitaMenosDespesa.resx">
+      <DependentUpon>ExReceitaMenosDespesa.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InserDespesas.resx">
+      <DependentUpon>InserDespesas.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InserReceitas.resx">
+      <DependentUpon>InserReceitas.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PagPrincipal.resx">
+      <DependentUpon>PagPrincipal.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
